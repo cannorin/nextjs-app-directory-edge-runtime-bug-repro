@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import styles from '../page.module.css'
 import type { ReqresResponse, User } from '../reqres';
 
 export const runtime = 'nodejs';
+
+export const metadata: Metadata = {
+  title: 'Node.js',
+  alternates: {
+    canonical: "/node",
+  },
+};
 
 export default async function Home() {
   const result: ReqresResponse<User> = await fetch(

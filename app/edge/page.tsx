@@ -1,7 +1,15 @@
+import type { Metadata } from "next";
 import styles from '../page.module.css'
 import type { ReqresResponse, User } from '../reqres';
 
 export const runtime = 'edge';
+
+export const metadata: Metadata = {
+  title: 'The Edge Runtime',
+  alternates: {
+    canonical: "/edge",
+  },
+};
 
 export default async function Home() {
   const result: ReqresResponse<User> = await fetch(
