@@ -24,7 +24,7 @@ export default async function Home() {
         (<a href='https://reqres.in/api/users/2' target='_blank'>https://reqres.in/api/users/2</a>)
       </p>
       <p>
-        This page runs on Node.js. Try reloading it!
+        This page runs on the Edge runtime. Try reloading it!
       </p>
     </main>
   )
